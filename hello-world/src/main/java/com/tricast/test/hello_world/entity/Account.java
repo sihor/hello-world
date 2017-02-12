@@ -1,4 +1,4 @@
-package com.tricast.test.hello_world;
+package com.tricast.test.hello_world.entity;
 
 import java.util.Date;
 
@@ -15,9 +15,8 @@ import org.hibernate.annotations.Table;
  *
  */
 @Entity
-@Table(appliesTo = "EVENTS")
-public class Account
-{
+@Table(appliesTo = "ACCOUNTS")
+public class Account {
 	@Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
     @Column(name="id")
